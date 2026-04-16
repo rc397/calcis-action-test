@@ -1,0 +1,8 @@
+Review the following pull request diff. For each file changed, note:
+1. Any bugs or logic errors
+2. Security concerns (injection, auth bypass, data leaks)
+3. Performance issues (N+1 queries, unnecessary allocations)
+4. Style or readability improvements
+
+Be specific. Reference line numbers. If the code looks correct, say so
+briefly and move on. Do not pad your review with generic advice.
