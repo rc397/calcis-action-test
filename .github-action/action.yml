@@ -1,0 +1,20 @@
+name: "Calcis LLM Cost Estimate"
+description: "Comments estimated LLM API costs on PRs when prompt files change"
+branding:
+  icon: "dollar-sign"
+  color: "green"
+inputs:
+  api-key:
+    description: "Calcis API key (starts with calc_)"
+    required: true
+  model:
+    description: "LLM model to estimate costs for"
+    required: false
+    default: "claude-sonnet-4-6"
+  file-patterns:
+    description: "Comma-separated glob patterns for prompt files to scan"
+    required: false
+    default: "**/*.prompt,**/prompts/**"
+runs:
+  using: "node20"
+  main: "dist/index.js"
